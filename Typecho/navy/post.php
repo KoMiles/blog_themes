@@ -3,7 +3,7 @@
 	<div class="res-cons">
 		<article class="post">			
 			<date class="post-meta">
-				<?php $this->date('F j, Y'); ?>
+				<?php _e('作者: '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a> &nbsp;&nbsp;<?php $this->date('F j, Y'); ?>
 			</date>
 			<header>
 				<h1 class="post-title"><?php $this->title() ?></h1>
